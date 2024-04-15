@@ -4,6 +4,8 @@ if (document.readyState == "loading") {
     pronto()
 }
 
+
+var totalItens = "0,00"
 function pronto() {
     const botaoRemoverItem = document.getElementsByClassName("botao-remover-item")
     for (var i = 0; i < botaoRemoverItem.length; i++) {
@@ -19,8 +21,26 @@ function pronto() {
     for (var i = 0; i < botaoAdicionarItemCarrinho.length; i++) {
         botaoAdicionarItemCarrinho[i].addEventListener("click", adicionarCarrinho)
     }
-}
 
+    const botaoEnviarPedido = document.getElementsByClassName("botao-enviar-pedido")[0]
+    botaoEnviarPedido.addEventListener("click",fazerCompra)
+}
+function fazerCompra(){
+    if(totalItens ==="0,00"){
+        alert("Seu carrinho está vazio!!!")
+    }else{
+        alert(
+            `
+            Obrigado pela sua compra!
+            Valor do pedido:R$${totalItens}
+            Volte Sempre :)
+            `
+        )
+    }
+
+    document.querySelector(".carrinho tbody").innerHTML = ""
+    atualziarTabela()
+}
 
 
 function checarInputNulo(event){
@@ -51,8 +71,8 @@ function adicionarCarrinho(event) {
 
     novoProdutoCarinho.innerHTML =
         `
-        <td class="identificacao-item"><img src="${imagemProduto}" alt="${tituloProduto}"><strong
-                    class="titulo-item">${tituloProduto}</strong></td>
+        <td class="identificacao-item"><strong
+        class="titulo-item">${tituloProduto}</strong><img src="${imagemProduto}" alt="${tituloProduto}"></td>
             <td>
                 <span class="preco-item">${precoProduto}</span>
             </td>
@@ -75,7 +95,7 @@ function removerItem(event) {
 
 
 function atualziarTabela() {
-    let totalItens = 0
+    totalItens = 0
     const itemCarrinho = document.getElementsByClassName("item-carrinho")
     for (var i = 0; i < itemCarrinho.length; i++) {
         const precoItem = itemCarrinho[i].getElementsByClassName("preco-item")[0].innerText.replace("R$", "").replace(",", ".")
