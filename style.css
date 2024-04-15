@@ -19,7 +19,6 @@ header {
 
 header,
 .cardapio li {
-    font-size: 1.3rem;
     color: white;
     list-style: none;
 }
@@ -209,15 +208,32 @@ input {
     .titulo-grupo h1 {
         font-size: 20px;
     }
+    
 }
-
+@media screen and (min-width: 320px) {
+    header{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (min-width: 1023px) {
+    header{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (min-width: 1440px) {
+    header{
+        font-size: 20px;
+    }
+}
 @media screen and (min-width: 2560px) {
     main {
         font-size: 32px;
     }
-
+    
     header li {
-        font-size: 32px;
+        font-size: 37px;
     }
 
     .titulo-grupo h1 {
