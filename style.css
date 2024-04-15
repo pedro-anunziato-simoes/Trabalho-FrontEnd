@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 html {
-    
-    background-color: antiquewhite;  
+    background-color: rgb(255, 223, 181);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 header {
     display: flex;
     justify-content: space-evenly;
@@ -16,12 +16,15 @@ header {
     list-style: none;
     border-bottom: 1px solid black;
 }
-header,.cardapio li{
+
+header,
+.cardapio li {
     font-size: 1.3rem;
     color: white;
     list-style: none;
 }
-main{
+
+main {
     align-items: center;
     text-align: center;
 }
@@ -30,10 +33,12 @@ main{
     align-items: center;
     max-width: 100%;
 }
-.cardapio span{
-    color:rgb(151, 20, 20);
+
+.cardapio span {
+    color: rgb(151, 20, 20);
 }
-.cardapio h1{
+
+.cardapio h1 {
     padding: 30px;
     border: 1px solid orange;
     margin: 10px 10px 10px 10px;
@@ -41,19 +46,22 @@ main{
     text-align: center;
     border-radius: 5px;
 }
-.cardapio img{
+
+.cardapio img {
     width: 200px;
 }
-.cardapio button{
+
+.cardapio button {
     background-color: rgb(243, 188, 85);
     border-radius: 55%;
     border: none;
 }
-.cardapio button:hover{
+
+.cardapio button:hover {
     background-color: rgb(177, 115, 0);
 }
 
-.titulo-grupo{
+.titulo-grupo {
     display: flex;
     width: 100%;
     align-items: center;
@@ -63,7 +71,8 @@ main{
     margin: 0.3rem 0rem;
 }
 
-.titulo-grupo h1{
+.titulo-grupo h1 {
+    background-color: rgba(255, 204, 108, 0.582);
     margin: 5%;
     font-size: 10px;
     font-weight: bold;
@@ -72,7 +81,8 @@ main{
     justify-content: center;
 }
 
-.info-produto{
+.info-produto {
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,19 +92,21 @@ main{
     border: 1px solid orange;
     background-color: rgba(255, 204, 108, 0.582);
 }
-.imagem-produto{
+
+.imagem-produto {
     max-height: 124.4px;
     max-width: 200px;
 }
 
-.botao-remover-item:hover{
+.botao-remover-item:hover {
     background-color: rgb(177, 115, 0);
 }
+
 .lanches,
 .acompanahmentos,
-.bebidas{
+.bebidas {
     display: grid;
-    justify-items:center;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
     align-items: center;
@@ -104,15 +116,17 @@ main{
     text-align: center;
     padding-bottom: 5px;
 }
-.botao-enviar{
+
+.botao-enviar {
     justify-content: center;
     display: flex;
     width: 100%;
 }
+
 .carrinho {
     padding: 10px;
     margin: 0 auto;
-    min-width:90%;
+    min-width: 90%;
     border: 1px solid black;
     background-color: rgb(151, 20, 20);
     color: white;
@@ -145,13 +159,14 @@ main{
     width: 100px;
 }
 
-.botao-remover-item{
+.botao-remover-item {
     background-color: rgb(243, 188, 85);
     border: none;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-input{
+
+input {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -163,45 +178,49 @@ input {
     text-align: center;
 
 }
-.pedidos{
+
+.pedidos {
     display: flex;
     flex-direction: column;
     text-align: start;
 }
+
 .texto-pedidos {
-   min-width: 90%;
-   font-size: 25px;
-   padding: 10px;
-   margin: 0 auto;
+    min-width: 90%;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
-.botao-enviar-pedido:hover{
+.botao-enviar-pedido:hover {
     background-color: rgb(177, 115, 0);
 
 }
-.botao-enviar-pedido{
+
+.botao-enviar-pedido {
     background-color: rgb(243, 188, 85);
-    margin:20px;
+    margin: 20px;
     width: 50%;
     height: 50px;
     border: none;
 }
+
 @media screen and (min-width: 768px) {
-    .titulo-grupo h1{
+    .titulo-grupo h1 {
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 2560px) {
-    main{
+    main {
         font-size: 32px;
     }
 
-    header li{
+    header li {
         font-size: 32px;
     }
-    
-    .titulo-grupo h1{
+
+    .titulo-grupo h1 {
         font-size: 30px;
     }
 }
