@@ -6,5 +6,7 @@ Utilizando as tecnologias HTML5 CSS3 e JavaScript, sem nenhum tipo de Framework 
 
 Feito em apenas 5 horas pelos integrantes do grupo:<br/>
 Pedro Henrique da Silva Gomes Anunziato Simões RA: 21019085-2  <br/>
-João Vitor Cunha dos Santos <br/>
-Ana Paula Reino <br/>
+João Vitor Cunha dos Santos RA: 21161106-2 <br/>
+Ana Paula Reino de Andrade RA: 23430969-2 <br/>
+
+Thanks for reading!!!
